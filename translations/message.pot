@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Ebook Translator Calibre Plugin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ebook Translator Calibre Plugin\n"
+"Report-Msgid-Bugs-To: bookfere@gmail.com\n"
+"POT-Creation-Date: 2023-04-30 22:38+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: __init__.py:13 main.py:95
+msgid "Send to Kindle"
+msgstr ""
+
+#: __init__.py:15
+msgid "A calibre plugin to send your ebook to Kindle with a desired title."
+msgstr ""
+
+#: main.py:58
+msgid "Send"
+msgstr ""
+
+#: main.py:62
+msgid "Setting"
+msgstr ""
+
+#: main.py:65
+msgid "About"
+msgstr ""
+
+#: main.py:75
+msgid "Double-click to edit the ebook title for display on your Kindle."
+msgstr ""
+
+#: main.py:82
+msgid "Ebook Title"
+msgstr ""
+
+#: main.py:127
+msgid ""
+"This plugin uses the Calibre email configuration; please click the button "
+"below to add email."
+msgstr ""
+
+#: main.py:133
+msgid "Email Setting"
+msgstr ""
+
+#: main.py:144
+msgid "Preferred Setting"
+msgstr ""
+
+#: main.py:153 main.py:155 main.py:199
+msgid "Unset"
+msgstr ""
+
+#: main.py:156
+msgid "Preferred Format"
+msgstr ""
+
+#: main.py:159
+msgid "Delete ebook from library after sending"
+msgstr ""
+
+#: main.py:165
+msgid "Email Address"
+msgstr ""
+
+#: main.py:167
+msgid "Manage Email Address"
+msgstr ""
+
+#: main.py:187
+msgid "Save"
+msgstr ""
+
+#: main.py:204 main.py:301
+msgid "You must provide an email address."
+msgstr ""
+
+#: main.py:206
+msgid "The configuration has been saved."
+msgstr ""
+
+#: main.py:282
+msgid "Donate"
+msgstr ""
+
+#: main.py:282
+msgid "Feedback"
+msgstr ""
+
+#: main.py:311
+#, python-format
+msgid "Email %(name)s to %(to)s"
+msgstr ""
+
+#: ui.py:12
+msgid "Send ebooks to Kindle via email"
+msgstr ""
+
+#: ui.py:27
+msgid "You must choose at least one ebook."
+msgstr ""

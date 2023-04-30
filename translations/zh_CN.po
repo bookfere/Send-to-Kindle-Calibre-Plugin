@@ -1,25 +1,27 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Chinese translations for Send to Kindle Calibre Plugin
+# Send to Kindle Calibre Plugin 软件包的简体中文翻译.
+# Copyright (C) 2023 THE Send to Kindle Calibre Plugin'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Send to Kindle Calibre Plugin.
+# Automatically generated, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 16:24+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: Send to Kindle Calibre Plugin\n"
+"Report-Msgid-Bugs-To: bookfere@gmail.com\n"
+"POT-Creation-Date: 2023-04-30 22:38+0800\n"
+"PO-Revision-Date: 2023-04-30 15:09+0800\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, python-format
-msgid "Email %s to %s"
-msgstr "发送 %s 到 %s"
+msgid "Send to Kindle"
+msgstr "发送到Kindle"
+
+msgid "A calibre plugin to send your ebook to Kindle with a desired title."
+msgstr "此插件可让你发送到 Kindle 的电子书能够正确显示书名。"
 
 msgid "Send"
 msgstr "发送"
@@ -30,64 +32,59 @@ msgstr "设置"
 msgid "About"
 msgstr "关于"
 
-msgid "Double-click to edit the book title:"
-msgstr "双击更改书名："
+msgid "Double-click to edit the ebook title for display on your Kindle."
+msgstr "双击更改要在 Kindle 中显示的书名。"
 
-msgid "Format"
-msgstr "格式"
-
-msgid "Title"
+msgid "Ebook Title"
 msgstr "书名"
-
-msgid "Send to Kindle"
-msgstr "发送到Kindle"
 
 msgid ""
 "This plugin uses the Calibre email configuration; please click the button "
-"below to add email:"
-msgstr "本插件使用Calibre邮箱设置，点击按钮添加接收邮箱。"
+"below to add email."
+msgstr "本插件使用 Calibre 邮箱设置，点击按钮添加接收邮箱。"
 
 msgid "Email Setting"
 msgstr "邮箱设置"
 
-msgid "Choose the email address to receive ebook:"
-msgstr "勾选要接收电子书的邮箱："
+msgid "Preferred Setting"
+msgstr "偏好设置"
+
+msgid "Unset"
+msgstr "未设置"
+
+msgid "Preferred Format"
+msgstr "首选格式"
+
+msgid "Delete ebook from library after sending"
+msgstr "发送后从书库中删除电子书"
+
+msgid "Email Address"
+msgstr "邮箱地址"
+
+msgid "Manage Email Address"
+msgstr "管理邮箱地址"
 
 msgid "Save"
 msgstr "保存"
 
-msgid "A calibre plugin for you to send ebook with the desired title."
-msgstr "此插件可让你发送的电子书能够正确显示书名。"
-
-msgid "Feedback"
-msgstr "反馈"
-
-msgid "Donate"
-msgstr "捐助"
+msgid "You must provide an email address."
+msgstr "必须提供一个邮箱地址。"
 
 msgid "The configuration has been saved."
 msgstr "配置已保存。"
 
-msgid "Failed to email book"
-msgstr "电子书发送失败"
+msgid "Donate"
+msgstr "捐助"
 
-msgid "sent"
-msgstr "已发送"
+msgid "Feedback"
+msgstr "反馈"
 
-msgid "You must provide an email address."
-msgstr "必须提供一个邮箱地址。"
-
-msgid "The ebook has been added to the send job queue."
-msgstr "电子书已添加到发送队列。"
-
-msgid "Email {} to {}"
-msgstr "发送 {} 到 {}"
+#, fuzzy, python-format
+msgid "Email %(name)s to %(to)s"
+msgstr "发送 %(name)s 到 %(to)s"
 
 msgid "Send ebooks to Kindle via email"
-msgstr "通过邮箱发送电子书到Kindle"
+msgstr "通过邮箱发送电子书到 Kindle"
 
 msgid "You must choose at least one ebook."
 msgstr "你必须选择至少一本电子书。"
-
-msgid "Show Details ..."
-msgstr "显示详情 ..."

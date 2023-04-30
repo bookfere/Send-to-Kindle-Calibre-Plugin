@@ -7,14 +7,13 @@ load_translations()
 
 
 class InterfacePlugin(InterfaceAction):
-    name = _(SendToKindle.title)
+    name = SendToKindle.name
     action_spec = (
-        name, None, _('Send ebooks to Kindle via email'), None
-    )
+        _(name), None, _('Send ebooks to Kindle via email'), None)
 
     def genesis(self):
         try:
-            icon = get_icons('images/icon.png', name)
+            icon = get_icons('images/icon.png', _(self.name))
         except Exception:
             icon = get_icons('images/icon.png')
 
@@ -29,9 +28,11 @@ class InterfacePlugin(InterfaceAction):
             return
 
         window = ProcessDialog(self.gui, self.qaction.icon(), ebooks)
-        window.setMinimumWidth(400)
-        window.setMinimumHeight(400)
-        window.setWindowTitle(self.name + ' - ' + SendToKindle.get_version())
+        window.setModal(True)
+        window.setMinimumWidth(500)
+        window.setMinimumHeight(420)
+        window.setWindowTitle(
+            '%s - %s' % (_(self.name), SendToKindle.__version__))
         window.setWindowIcon(self.qaction.icon())
         window.show()
 
@@ -43,15 +44,8 @@ class InterfacePlugin(InterfaceAction):
         model = self.gui.library_view.model()
         for index, row in enumerate(rows):
             row_number = row.row()
-            id = model.id(row)
-            print(id)
-            fmts = api.formats(id)
-            ebooks[index] = [
-                model.title(row_number),
-                dict(zip(
-                    map(lambda fmt: fmt.lower(), fmts),
-                    map(lambda fmt: api.format_abspath(id, fmt), fmts),
-                )),
-                fmts[0].lower(),
-            ]
+            ebook_id = model.id(row)
+            formats = api.formats(ebook_id)
+            title = model.title(row_number)
+            ebooks[index] = [ebook_id, title, title]
         return ebooks
