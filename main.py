@@ -140,6 +140,7 @@ class ProcessDialog(QDialog):
     def layout_config_data(self):
         widget = QWidget()
         layout = QVBoxLayout(widget)
+        layout.setContentsMargins(0, 0, 0, 0)
 
         preferred_widget = QGroupBox(_('Preferred Setting'))
         preferred_layout = QVBoxLayout(preferred_widget)
@@ -285,12 +286,12 @@ class ProcessDialog(QDialog):
 
         return widget
 
-    def get_changed_aname(self, aname):
+    def get_changed_aname(self, name, aname):
         ext = os.path.splitext(aname)[1].lower()
         for item in self.ebooks.values():
-            if aname == item[1].lower() + ext:
+            if name == item[1].lower():
                 return item[2] + ext
-        return aname
+        return name + ext
 
     def send_ebooks(self):
         if len(self.ebooks) < 1:
@@ -311,7 +312,7 @@ class ProcessDialog(QDialog):
                     'Email %(name)s to %(to)s') % dict(name=name, to=to)
                 subject = subject or uuid4()
                 text = text or uuid4()
-                aname = self.get_changed_aname(aname.lower())
+                aname = self.get_changed_aname(name.lower(), aname)
                 if DEBUG:
                     print(attachment, aname, to, subject, text)
                     return
@@ -333,5 +334,5 @@ class ProcessDialog(QDialog):
                 email, formats, get_config('delete_from_library'),
                 subject=subject, send_ids=ids,
                 specific_format=preferred_format)
-        self.ebooks.clear()
+        # self.ebooks.clear()
         self.done(0)

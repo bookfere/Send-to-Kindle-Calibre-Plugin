@@ -15,7 +15,7 @@ class SendToKindle(InterfaceActionBase):
         'A calibre plugin to send your ebook to Kindle with a desired title.')
     supported_platforms = ['windows', 'osx', 'linux']
     author = 'bookfere.com'
-    version = (1, 1, 0)
+    version = (1, 1, 1)
     __version__ = 'v' + '.'.join(map(str, version))
     minimum_calibre_version = (2, 0, 0)
 
